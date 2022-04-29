@@ -1,11 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, SafeAreaView, Button, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
-// import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
-// import { faBars } from '@fortawesome/free-solid-svg-icons';
-// import Header from '../components/Header';
 
-export default Settings = (props) => {
+export default UpcommingMatches = (props) => {
     return (
         <View style={styles.container}>
             <SafeAreaView style={styles.container}>
@@ -35,6 +32,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#2A90FF',
         paddingTop: '5%',
         paddingLeft: '1%',
+
     },
     head: {
         color: '#FFFFFF',

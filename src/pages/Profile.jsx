@@ -1,9 +1,6 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, SafeAreaView, Button, View } from 'react-native';
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
-import Header from '../components/Header';
-
 
 export default Profile = (props) => {
     return (
@@ -12,13 +9,7 @@ export default Profile = (props) => {
                 <View style={styles.head}>
                     {/* <Header /> */}
                 </View>
-                <View style={styles.btn} >
-                    <Button
-                        onPress={() => alert('RATIO')}
-                        title="MOHAMMED GENERATOR"
-                        color="#FF0000"
-                        accessibilityLabel="Learn more about this purple button"
-                    />
+                <View style={styles.btn}>
                     <Button
                         onPress={() => props.navigation.navigate('Settings')}
                         title="go to settings" />

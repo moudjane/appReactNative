@@ -1,3 +1,35 @@
+import * as React from 'react';
+import { Button, View } from 'react-native';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import { NavigationContainer } from '@react-navigation/native';
+import Home from "./src/pages/Home";
+import Settings from "./src/pages/Settings";
+import Profile from "./src/pages/Profile";
+import UpcommingMatches from "./src/pages/UpcommingMatches";
+import Bet from "./src/pages/Bet";
+import Leaderboard from './src/pages/Leaderboard';
+import AboutUs from './src/pages/AboutUs';
+import Sports from './src/pages/Sports';
+
+const Drawer = createDrawerNavigator();
+
+export default function App() {
+  return (
+    <NavigationContainer>
+      <Drawer.Navigator initialRouteName="Home">
+        <Drawer.Screen name="Profile" component={Profile} />
+        <Drawer.Screen name="Home" component={Home} />
+        <Drawer.Screen name="(e)Sports in real time" component={Sports} />
+        <Drawer.Screen name="Upcomming matches" component={UpcommingMatches} />
+        <Drawer.Screen name="Bet" component={Bet} />
+        <Drawer.Screen name="Leaderboard" component={Leaderboard} />
+        <Drawer.Screen name="Settings" component={Settings} />
+        <Drawer.Screen name="About us" component={AboutUs} />
+      </Drawer.Navigator>
+    </NavigationContainer>
+  );
+}
+
 /*import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, SafeAreaView, Button, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
@@ -32,25 +64,3 @@ export default function App() {
     </NavigationContainer>
   );
 }*/
-
-import * as React from 'react';
-import { Button, View } from 'react-native';
-import { createDrawerNavigator } from '@react-navigation/drawer';
-import { NavigationContainer } from '@react-navigation/native';
-import Home from "./src/pages/Home";
-import Settings from "./src/pages/Settings";
-import Profile from "./src/pages/Profile";
-
-const Drawer = createDrawerNavigator();
-
-export default function App() {
-  return (
-    <NavigationContainer>
-      <Drawer.Navigator initialRouteName="Home">
-        <Drawer.Screen name="Home" component={Home} />
-        <Drawer.Screen name="Profile" component={Profile} />
-        <Drawer.Screen name="Settings" component={Settings} />
-      </Drawer.Navigator>
-    </NavigationContainer>
-  );
-}

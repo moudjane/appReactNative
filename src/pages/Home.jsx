@@ -1,16 +1,13 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, SafeAreaView, Button, View } from 'react-native';
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
-import Header from '../components/Header';
-
+import { Linking } from 'react-native';
 
 export default Home = (props) => {
     return (
         <View style={styles.container}>
             <SafeAreaView style={styles.container}>
                 <View style={styles.head}>
-                    {/* <Header /> */}
                 </View>
                 <View style={styles.btn} >
                     <Button

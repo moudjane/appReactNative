@@ -1,11 +1,8 @@
 import React from 'react';
-import { StyleSheet, Text, SafeAreaView, Button, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
-// import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
-// import { faBars } from '@fortawesome/free-solid-svg-icons';
-// import Header from '../components/Header';
+import { StyleSheet, Text, SafeAreaView, Button, View } from 'react-native';
 
-export default Settings = (props) => {
+export default Bet = (props) => {
     return (
         <View style={styles.container}>
             <SafeAreaView style={styles.container}>
@@ -14,13 +11,13 @@ export default Settings = (props) => {
                 </View>
                 <View style={styles.btn} >
                     <Button
-                        onPress={() => alert('YOOOOOOOOOOOOO')}
+                        onPress={() => alert('RATIO')}
                         title="MOHAMMED GENERATOR"
                         color="#FF0000"
                         accessibilityLabel="Learn more about this purple button"
                     />
                     <Button
-                        onPress={() => props.navigation.goBack()}
+                        onPress={() => props.navigation.navigate('Settings')}
                         title="go to settings" />
                 </View>
                 <StatusBar style="auto" />
@@ -35,6 +32,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#2A90FF',
         paddingTop: '5%',
         paddingLeft: '1%',
+
     },
     head: {
         color: '#FFFFFF',
